@@ -1,5 +1,5 @@
 LISCENSE EXTENSION:
-Universal Immunity Liscense by { Cyborg Tek } 
+Universal Immunity Liscense by {Cyborg Tek} 
 
 Sole Proprietor { https://soloist.ai/dailyinvestors }
 
