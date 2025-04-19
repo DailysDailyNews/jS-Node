@@ -698,6 +698,15 @@ console.log(screen)
 
      // Use console.dir() to view the properties/methods
      console.dir(newParagraph);
+
+
+47. var isAdmin = false
+
+    if (isAdmin)
+    (
+       adminMenu.addItem("/menus/secure/ff457/addNewPortalUser2.jsp",
+         *create a new user");
+    )
      
 
 
