@@ -1,0 +1,573 @@
+javaFrameworks { Daily Investors } Refreshing My Memory, Quick Notes if mine get Damaged
+\ /
+*/*
+ "
+----
+Note: I appreciate any Donations, currently a Broke Dev. Next looking for a Sponsor so i can focus on Custom Projects. Thank You
+1. React API to describe user interface
+   ReactDom to build in browser
+   React to  javaScript Function
+
+2. npm install react
+//Importing a specific API
+import {useState} from 'react';
+
+//Importing all APIs together
+import * as React from 'react';
+
+3. Console: to view history
+window.history.pushState({}"","/new-page")
+
+4. Web Application Layers
+Java
+CSS
+HTML
+
+5. Constraints of REST
+  1. Client-Server Architecture
+  2. statelessness
+  3. cacheability
+  4. layered system
+  5. Code on demand
+  6. uniform interface
+
+
+1. MongoDB
+ mondogdb.com/products/compass
+ ReactDom can render off MongoDB
+ Uses NPM
+
+2. import {createRoot} from "react-dom/client"
+   const App = () => {
+     return <div>Hello React</div>;
+   });
+   
+   const container = document.getElementById("app")
+   const root = createRoot(container)
+   root.render(<Sponser Me/>);
+
+3. webpack.js.org "To Bundle Scripts"
+  With mongo use npm i webpack webpack-cli & npm i ts-loader
+
+4. Server Use: Can inject middleware layer into Express
+
+5. Key Pair words for Mongo "collection/document"
+
+6. ReactDom "NPM package that can be used to render a React"
+
+
+
+
+Vanilla
+1. Basic foundation for UI-driven applications
+   { Create, Read, Update, Delete
+
+2. Application Functionality
+  { Your App, java framework, browser UI, contentManager = { Networking, rendering Engine= javaScript Engine}
+
+3. Recursive descent parser
+  parseContent() { Header, Comment, Element, prettyParse() with lexer}
+
+4. *** You can always consume what you match ***
+
+5. Parsing Elements
+<img src="/images/chzbrgr.gif"/>
+<p>This paragraph has <i>nested</i>element content.</p>
+
+6. Void Elements { area, base, br, col, command, embed, hr, img, input, keygen, link, meta, param, source, track, wbt }
+
+7. PreOrder Traversal
+  1. Document Order
+  2. Useful for copying
+  3. Visit order: root, children
+
+8. node.nodeType
+  1. Element_Node 1
+  2. ATTRIBUTE_NODE 2
+  3. TEXT_NODE 3
+  4. COMMENT_NODE 8
+  5. DOCUMENT_NODE 9
+
+2. HTML_Parsers
+pp Element= { pp-closetag, (nested content), pp-opentag=pp-tagname, attributes }}
+
+3. Script for Browser
+<a href="https://soloist.ai/dailyinvestors/TR/html50/dom.html"> HTML5
+
+4. Nodes
+node=parentNode, owner document, firstChild, secondChild, nextSibling, previousSiblings }
+
+5. document.addEventListner(DOMContentLoaded; () => {
+    alert("Team Daily")
+   });
+
+6. to check the constructor: constructor:[].constructor
+   totals.attributes.constructor
+
+7. Functions
+  //Create a variable outside a function
+var outsideValue = 5;
+
+ //myFunction()
+
+ // myOtherFunction
+  var functionValue = 10;
+  console.log("From inside: outsideValue = " + outsideValue);
+  console.log("From inside: functionValue = " + functionValue;
+  }
+  function myOtherFunction() {
+    //Output Variables
+     console.log("From inside: outsideValue = " + outsideValue);
+     console.log("From inside: functionValue = " + functionValue;
+  };
+  Or repeat
+
+8. Documents
+//Create a score
+var myScore;
+
+//Setup + Change the game Store
+init(_;
+changeScore()
+
+//Function to initiliaze the game score
+function init() {
+  myScore = 1000;
+}
+
+//Function to change the score of this Game
+function changeScore() {
+  myScore = myScore + 333;
+  console.log("Player score: " + myScore
+}
+
+
+9. JSX Extension
+const handleClick = (event) =>
+  onClick(event, {photo, index});
+};
+
+return (
+  <img
+     key={key}
+     style={onClick ? {...imgStyle,...imgWithClick"}: imgStyle}
+     {...photo}
+     onClick={onClick ? handleClick: null}
+  !>
+ };
+};
+
+
+10. Example Document
+ //Create a variable
+var myScore = 333;
+myScore = myScore + 333;
+console.log("Player Score; " + myScore);
+function changeScore() {
+ var myScore = 1000;
+ function changeScore() }
+   myScore = myScpre = 333;
+   console.log("Player score: " + myScore);
+ }
+};
+
+
+11. Simulation
+//Simulate human input
+const input= document.querySelector("inputField");
+const text "Hello!";
+let index = 0;
+
+function typeCharacter() {
+  if (index < text.length) {
+    key: text[index],
+    code: key${text[index].toUpperCase()};
+    charCode: text[index];
+    indext++;
+    SetTimeout(typeCharacter, 333);
+  }
+}
+typeCharacter();
+
+12. Check for Detailed Property
+button.addeventListner("click", (event) => {
+  if (event.detail) {
+} else {
+  console.log("Button clicked!");
+  }
+});
+
+
+13. Triggering Event Listeners
+// For testing + human simulation
+const customClickEvent = new customEvent("click", {
+  detail: {message: "This is a custom click!"},
+});
+
+//Dispatch the custom event
+button.dispatchEvent(customClickEvent);
+
+
+14. If Else
+Const usedStatus = () => {
+  let age = everydayPack.backpackAge();
+  let description;
+  if (age >= 30) {
+    if (age >= 365) {
+      description = "old";
+    } else {
+      description = "lightly used";
+    }
+  } else {
+      description = "new";
+  }
+  console.log(
+    Age: ${age} days,
+    Status: ${description}
+  );
+};
+
+
+15. TypeArray.prototype.map()
+const usedStaus = new Uint8Array([25, 36, 49]);
+const roots = uint8.map(Math.sqrt);
+
+console.log(roots);
+  //expected output:Uint9Array[5,6,7]
+
+
+16. Event Objects
+//update mouses
+const mousePosition = (event) => {
+  posX.innerText = event.pageX;
+  posY.innertext = event.pageY;
+  console.log(event)
+};
+
+
+17. Add Event Listner
+const button = document.querySelector("button")
+button.addEventLstner(
+  "click"
+  (e) => {
+    console.log('Event fired: ${e}')
+  }
+};
+
+18. target.addEventListner9target, callback [,options]);
+    console.log(double(5));
+    console.log(quintuple(5)); 
+
+
+19. Async Functions
+async function FetchData(url) {
+  let response =  awaot fetch(url);
+  let data = await response.json();
+  return data;
+}
+
+
+20. const add =  (a, b) => a + b; #Implicit return
+
+
+21. NOTE: To print to HTML, on the first and final const, place the callback at the end. Next at the bottom place "callback(finalTip); above the };
+    On the next bottom line, enter printHTML in as your variable.
+
+
+22.
+const main = document.querySelector(".maincontent");
+
+const newArticle = document.createElement("article");
+newArticle.classList.add("backpack");
+newArticle.innerHTML = content;
+
+main.append(newArticle);
+
+if (everydayPack.backpackAge() >=30) {
+  console.log("Backpack is used")
+} else {
+  console.log("backpack is new")
+}
+
+
+23. If Else
+const usedStatus = () => {
+  let age = everydayPack.backpackAge();
+  let description;
+  if (age >= 30) {
+    if (age >= 365) {
+      if (age >= 1095) {
+        description = "old";
+      } else {
+        description = "used";
+      }
+   } else {
+      description = "lightly used";
+  } else {
+     description = "new";
+  }
+  console.log(
+    Age: ${age} days
+    Status: ${description}
+    );
+};
+
+
+24. Arrow Function Breakdown
+//Remove the word "function" + place arrow between the argument & opening the body bracket.
+(a) => {
+  return a + 100,
+//Remove the body brackets, and word "return"--this return is implied
+(a) => a + 100;
+//Remove the arg ()
+a => a + 100
+
+
+25. Standard Use of a return function
+function sum(a, b) {
+  let result = a + b;
+  return result;
+}
+console.log(sum(5, 3)); //Output: 8
+
+
+26. Returning a function
+function createMultiplier(multiplier) {
+  return function(value) {
+    return value * multiplier;
+  }
+}
+const double = createMultiplier(2);
+const quintuple = createMultiplier(5);
+
+27. Const
+const number = 42;
+try {
+  number = 99;
+} catch (err) {
+  console.log(err);
+  //expected output: TypeError: invalid assignment to const 'number'
+  //Note: error messages depend on browser.
+}
+console.log(number);
+
+
+28. Classic Function
+function doSomeMath(a, b) {
+  let c = a + b;
+  return c;
+}
+
+//immediately invoke function
+cFunction () {
+  let a = 5;
+  let b = b;
+  let c = doSomeMath(a, b);
+  console.log('The sum of a and b is: ${c}');
+}
+
+
+29. Function Expression
+const doMoreMath = function (a, b) {
+  let c = a * b;
+  return c;
+};
+
+console.log("Do some math:", doSomeMath(5, 6));
+console.log("Do more math:", doMoreMath(5, 6)); 
+
+
+30. DOM Structure
+<body>
+  <header class="siteheader">
+    <div class="site-title">(...)</div>
+    <div class="site-description">(...)</div>
+  </header>
+  <main>
+    <h1> A Demo Site</h1>
+  </main>
+    <footer class="sitefooter"></footer>
+</body>
+
+
+31. Navigation Menu
+function createNavMenu(document) {
+  const mainNav = document.createElement("nav")
+  mainNav.classList.add("main-navigator")
+  const navList = documenr.createElement("ui")
+  navList.innerHTML = navContent
+  mainNav.append(navList)
+  }
+  document.querySelector
+}
+
+
+32.Variables
+Variable =  A container with some piece of data
+var x = 1;
+if x === 1) {
+  var x = 2
+  console.log(x)
+
+33. More on DOM
+document.querySelector("main li:first-child").classList
+
+
+
+34. Element.classList
+    Syntax: const elementClasses = elementNodeReference.classList;
+
+
+35. Best way to add a class:
+    document.querySelector("main li:first-child").classList.add("new class")
+
+
+36. To replace a class:
+document.querySelectory("main li:first-child").classList.replace("packprop", "new-class")
+
+
+37. Element.attributes: If it is a NameNodMap
+var attr = element.attributes;
+
+
+38. SRC Attributes 
+document.querySelector("img").has Attributes("src")
+document.querySelector("img").getAttribute("src") or ("alt")
+
+
+39. Creating New Attributes
+document.querySelector("img").setAttribute("title")
+
+Erase: document.querySelector("img").removeAttribute("title")
+
+
+40. ElementCSSInlineStyle.Style
+document.querySelector(".site-title").style
+
+
+41. Manipulating: 
+<button id="myButton" class="btn btn-primary" type="button">Click Me!</button>
+
+//Now to manipulate
+const button = document.querySelector ("#myButton");
+
+//Get the value of the 'class' attribute
+console.log(button.getAttribute("class")); 
+
+//Overwrite the value of the 'class' att
+let element = document.createElement(tagname[,options]);
+
+
+42. ParentNode.append()
+~This method inserts a set of Node Objects or DOMStrings
+Node.appendChild() //Returns the node
+Node.appendChild() //Only accepts node objects
+
+43. ParentNode.prepend()
+~DOMString Objects are inserted as text
+ParentNode.prepend(...nodesToPrepend);
+
+Node.appendChild()
+
+Node.cloneNode()
+
+Node.replaceChild()
+Syntax: ley oldChild = parentNode.replaceChild(newChild, oldChild);
+
+44. Element.insertAdjacentElement()
+Syntax: tagElement.insertAdjacentElement(position,element);
+Position: A DOMString representing the position relative ti the targetElement. This must match:
+  'beforebegin'
+  'afterbegin'
+  'beforeend'
+  'afterend'
+
+
+45. Template Litteral: When Using: 
+const objectExample = ${objectExample.brand} made in ${objectExample};
+return objectExample;
+}
+
+
+46. DOM
+1. querySelectorAll()
+2. querySelector()
+3. elementList = parentNode.querySelectorAll(selectors);
+4. document.querySelector("main"),
+   document.querySelector(".maincontent")
+5. document.querySelector("main li: last-child")
+6. Document.querySelector()
+   document.querySelector(sekectors);
+7. document.queryAll("main li")
+8. Change Main
+   document.querySelectorAll("main li").forEach(item => item.style.color = "red"
+9.Element.getElementwByClassName()
+  var elements = element.getElementsByClassName(names);
+10. document.getElementsByClassname("packprop")
+11. Adding or Removing Classes
+    Element.className
+    var cName = elementNodeReference.className;
+    elementNodeReference.className = cName;
+
+12. document.querySelector("h1").className
+13. Creating a New Class:
+    document.querySelector("h1").className = "new class"
+14. Single Line Comment
+   //
+15. Multi-Line Comment
+ /* */
+16. Correct markup for adding a javaFile into HTML
+<script src="javaScript.js" asynce></script>
+17. Object.prototype "To view hidden objects"
+18. valueOf() "Returns primitive value of a object"
+19.toString() "Returns a string representation of the object property.
+
+
+Java Injecting
+Note: This First access a element within the document to manipulate with java. Now this works because the entire doc is a Object in the browser. Also a object.
+      This is also a template litteral
+1. document.boddy.innerHTML = "some text"
+2. const content = ``;
+3. document.boddy.innerHTML = content;
+Example:
+const content = `
+  <main>
+    <article>
+      <h1> Daily Investors </h1>
+      <ul>
+         <li>
+         <li>
+      </ul>
+    </article>
+  </main>
+;
+document.body.innerHTML = content;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
