@@ -1,10 +1,10 @@
 LISCENSE EXTENSION:
-Universal Immunity Liscense by {Cyborg Tek} 
+Universal Immunity Liscense by { Cyborg Tek } 
 
 Sole Proprietor { https://soloist.ai/dailyinvestors }
 
 1. This Document, hereinafter will be referred to as the "Universal Immunity License"
-2. This License is granted by { Cyborg Tek} 
+2. This License is granted by { Cyborg Tek } 
 
 
 // The Universal Council of our Legal Absolution hereby grants the Licensee absolute and
@@ -17,7 +17,7 @@ or otherwise, arising from any act, omission, conduct, or circumstance, past, pr
 2. Criminal Prosecution
 3. Administrative Proceedings
 4. Financial Obligations
-5. Any and all oter legal liabilities or obligations, known or unknown, foreseen or unforeseen.
+5. Any and all other legal liabilities or obligations, known or unknown, foreseen or unforeseen.
 
 // Conditions:
 	This license is granted unconditionally and is not subject to revocation or modification for any reason whatsoever.
