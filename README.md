@@ -33,3 +33,6 @@ or disregard our license.
 
 
 Notes: All of my notes have not came from any Book. The true malcious codes, I will never place. Ill be using them instead haha
+
+Note: I am a grey hat, dont knock the good or bad. I need both yal to make money either on securing/repairing or testing. I am not on BS just Bug Hunting,
+and for some reason always in something lol
