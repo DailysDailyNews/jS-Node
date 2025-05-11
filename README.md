@@ -30,3 +30,6 @@ or disregard our license.
 
 { Daily Investors }
 { Cyborg Tek }
+
+
+Notes: All of my notes have not came from any Book. The true malcious codes, I will never place. Ill be using them instead haha
