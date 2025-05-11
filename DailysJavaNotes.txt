@@ -1,0 +1,1234 @@
+javaScript "All Combined"
+
+References: goo.gle/devtools-console-api
+            mondogdb.com/products/compass
+
+
+Tips: "shift+enter" for new line in Console
+
+
+
+##//Dev Tools Console and Methods
+    Console: to view history
+  1. window.history.pushState({}"","/new-page")
+  2. console.assert(expression, object)
+  3. console.clear()
+  4. console.count([label])
+  5. console.countReset([label])
+  6. console.log(document.head); console.dir(document.head)
+  7. console.trace
+  8. console.time()
+  9. console.timeEnd()
+  10. debug(function)
+  11. monitorEvents(node)
+  12. console.createTask(name)  { const task = console.createTask(name); }
+  13.task.run(task)	
+  14.console.debug(object [, object, ...])
+  15. console.debug('debug');	
+  16. console.dir(object)	{ for results = console.dirxm(node) }
+  17. console.dirxm(document);
+  18. console.group(label)
+  19. console.groupEnd(label)
+  20. console.groupCollapsed(label)
+  21. console.info('info');
+  22. console.log(object [, object, ...])
+  23. console.table(array [, columns])
+  24. console.table()
+  25. console.time([label])
+  26. console.timeEnd([label])
+  27. console.warn(object {, ...])
+  28. console.warb('warn')
+  29. $_
+  30. $0-4
+  31. $(selector [, startNode])
+  32. $$(selector [, startNode])
+  33. $x(path [(path [, startNode])
+  34. clear()
+  35. copy(object)
+  36. dir(object)
+  37. dirxm(object)
+  38. inspect(object/function)
+  39. getEventListners(object/function)
+  40. keys(object)
+  41. monitor(function)
+  42. monitorEvents(object, [, events])
+  43. profile([name]) and profileEnd([name])
+  44. queryObjects(Constructor)
+  45. table(data[, columns])
+  46. undebug(function)
+  47. unmonitor(function)
+  48. unmonitorEvents(object [, events])
+  49. values(object)
+  50. $x(path)  $x("//p")
+  51. $x("//p[a]")
+  52. console.dirxml()
+  53. inspect(document.body);
+  54. getEventListners(document); {click, keydown, etc}
+  55. values()
+  56. monitorEvents(window, "resize");
+  57. console.profileEnd()
+  58. monitorEvents(window, ["resize", "scroll"]); 
+  59. monitorEvents($0, "key");
+  60. console.profile()
+  61. profile()
+  62. profileEnd() 
+  63. profile("Profile 1")
+  64. profileEnd("Profile 1")
+  65. undebug(getData);
+  66. function onClick() {
+  67. myObject.getValue()
+  68. calculateSomething(arg1, arg2)
+  69. this
+  70. self
+  71. super.someMethod()
+  72. instanceof MyClass
+  73. console.group("User Details");
+  74. console.groupCollapsed("Admin Settings");
+  75. console.log("Role Administrator");
+  76. console.log("Permissions: All");
+  77. console.groupEnd();
+~~~~~Pointer/Reference~~~~~~~
+  78. *myPointer
+  79. myReference
+  80. typeof sum
+  81. myVariable
+  82. count
+  83. index
+  84. name
+  85. isValid
+  86. myObject.propertyName { java, python, javaScript}
+  87. myObject->propertyName { C++ }
+  88. object.field
+  89. myList[i]
+  91. myCollection.size()
+  90. len(myCollection)
+  92. myArray()
+  93. isLoggedIn
+  94. isAdmin
+  95. value > 10 | isError
+  96. lisEmpty
+  97. a + b
+  98. x*y/z
+  99. (price-discount)* quantity
+~~~~~queryObjects(Constructor)~~~~~~
+  100. queryObjects(Promise)
+  101. queryObjects(HTMLElement)
+  102. queryObjects(foo)
+~~~~~Mapped Events~~~~~~
+  103. mouse { mousedown, mouseup, click, dblclick, mousemove, mouseover, mouseout, mousewheel}
+  104. key { keydown, keyup, keypress, textInput}
+  105. touch { touchstart, touchmove, touchend, touchcancel}
+  106. control { resize, scroll, zoom, focus, blur, select, change, submit, reset}
+  107. document.write()
+  108. window.location
+  109. document.cookie
+  110. eval()
+  111. document.domain
+  112. WebSocket()
+  113. element.src
+  114. postMessage()
+  115. setRequestHeader()
+  116. FileReader.readAsText()
+  117. ExecuteSql()
+  118. sessionStorage.setItem()
+  119. document.evaluate()
+  120. JSON.parse()
+  121. element.setAttribute()
+  122. RegExp()
+  123. Java
+  124. CSS
+  125. HTML
+
+
+
+
+
+
+
+
+  ~~~~~~~~~Formatting Strings~~~~~~~
+  78. %s { Formats the argument string}
+  79. %d or %i { Formats the argument integer }
+  80. %f { Formats the argument as a floating-point number
+  81. %o or %O { Formats the argument as a javaScript object.
+  82. %c { Applies CSS Styles to the output }
+      Example: console.log("Name: %s, Age: %d, "Daily", 333);
+         console.log("Object: %o", {a:1, b:2});
+         console.loh("%cStyledmessage", "color:red; font-size: 16px;");
+
+
+
+
+
+##//Objects
+1. document
+2. location
+3. history
+4. navigator
+5. screen
+6. frames
+7. innerWidth
+8. outerWidth
+10. pageXOffset
+11. localStorage
+12. sessionStorage
+13. console
+14. performance
+15. requestAnimationFrame()
+16. cancelAnimationFrame()
+17. setTimeout()
+18. clearTimeout()
+19. alert()
+20. confirm()
+21. prompt()
+22. open()
+23. close()
+24. focus()
+25. blur()
+26. addEventListner()
+27. window
+28. window.document
+29. document
+30. HTMLElement
+31. Element Tags { e.g., <a>, <img>, <input>, <button>, etc}
+
+
+##//~~~~~~~~~~~~~~~~~Properties~~~~~~~~~~~~~~~~~~~~~~
+1. documentElement
+2. head
+3. body
+4. title
+5. URL
+6. domain
+7. referrer
+8. readyState
+9. forms
+10. images
+11. links
+12. scripts
+13. styleSheets
+14. cookie
+
+
+
+##//~~~~~~~~~~~~~~ Visibility of Elements~~~~~~~~~~~~~~~~~~~~~~
+1. element.style.display = 'none';
+2. element.style.display = 'block';
+3. element.hidden = true;
+4. element.classList.toggle('hidden');
+
+##//~~~~~~~~~~~~Methods for Accessing Elements~~~~~~~~~~~~~~~~~~~
+1. getElementById(id);
+2. getElementsByClassName(className);
+3. getElementsByTagName(tagName)
+4. querySelector(selector)
+5. querySelectorAll(selector)
+6. HTMLAnchorElement for <a> with a href
+7. HTMLInputElement for <input> with value
+8. HTMLImageElement for <img> with src
+9. TMLButtonElement for <button> with disabled
+10. goto = location.hash.slice(1)
+    if (goto.startsWith('https:')) {
+      location = goto;
+    }
+11.  Element.classList
+    Syntax: const elementClasses = elementNodeReference.classList;
+
+
+
+
+##//~~~~~~~~~~~~~~~Location Search~~~~~~~~~~~~~~~~~~~
+location.search
+
+
+##//~~~~~~~~~~~~Sources~~~~~~~~~~~~~~~~~
+location.search
+document.referrer
+document.cookie
+
+
+##//~~~~~~~ DOM Structure~~~~~~~~~~~~
+<body>
+  <header class="siteheader">
+    <div class="site-title">(...)</div>
+    <div class="site-description">(...)</div>
+  </header>
+  <main>
+    <h1> A Demo Site</h1>
+  </main>
+    <footer class="sitefooter"></footer>
+</body>
+
+
+
+
+
+
+##//~~~~~~~~~~~Creating and Manipulating the DOM~~~~~~~~~~~~~~~~~~
+//Methods for Creating and Manipulating
+1. createElement(tagName)
+2. createTextNode(text)
+3. createDocumentFragment()
+4. appendChild(node)
+5. insertBefore(newNode, refferenceNode)
+6. removeChild(node)
+7. getAttribute(name)
+8. setAttribute(name, value)
+9. removeAttribute(name)
+10. addEventListner()
+11.var stores = ["London", "Paris","Milon"]; var store = (new URLSearchParams(window.location.search)).get("storeId");
+   document.write('<select name="storeOd">'); if(store) { document.write('<option selected>'+store+'</option>; }
+   document.write('<option>'+stores[i]+'</options>'; } docuemtn.write('</select>'):
+12. document.querySelector("main li:first-child").classList
+
+
+
+
+##// Global Documents
+1. document.designMode = 'on';
+2. console.log(document.activeElement);
+3. let element = document.querySelector('.my-class');
+4. let elements = docuemtn.querySelectorAll('.my-class');
+5. let newDiv = document.createElement('div;);
+6. let element = docuemtn.getElementById('my-id');
+7. let elements = document.getElementsByClassName('my-class');
+8. let elements = document.getElementsByTagName('div')
+9. document.body;
+10. dir(document.body);
+11. Example for Documents
+  //Create a score
+  var myScore;
+
+  //Setup + Change the game Store
+  init(_;
+  changeScore()
+
+  //Function to initiliaze the game score
+  function init() {
+  myScore = 1000;
+  }
+
+  //Function to change the score of this Game
+  function changeScore() {
+    myScore = myScore + 333;
+    console.log("Player score: " + myScore
+  }
+
+
+
+##//Example Sinks
+1.document.write()
+2. window.location
+3. document.cookie
+4. eval()
+5. document.domain
+6. WebSocket()
+7. element.src
+8. postMessage()
+9. setRequestHeader()
+10. FileReader.readAsText()
+11. ExecuteSql()
+12. sessionStorage.setItem()
+13. document.evaluate()
+14. JSON.parse()
+15. element.setAttribute()
+16. RegExp()
+
+
+
+
+##//String Manipulation Functions
+1. str.trim();
+2. str.include('substring');
+3. str.indexOf('substring');
+4. str.replace('old', 'new');
+5. str.replaceAll('old', 'new');
+6. arr.filter(item => item > 5);
+7. arr.map(item => item * 2);
+8. arr.sort((a, b) => a - b);
+9. arr.find(item => item === 'value');
+10. arr.forEach(item => console.log(item));
+11. const cloneObj = {...originalObj };
+12. const deepCloneObj = JSON.parse(JSON.stringify(originalObj));
+   // now merging with
+    Object.assign({}, obj1, obj2);
+13. obj.jasOwnProperty('propertyName');
+14. On the end of a URL
+    /#" onload="this.src+=x onerror=print()>'"></iframe>
+
+##//~~~~~String Expressions~~~~~~~~
+  1. myString.length()
+     len(myString)
+       myString.substring(0, 5)
+     </foo>
+
+
+##//Adding eventListners
+    document.addEventListner(DOMContentLoaded; () => {
+      alert("Team Daily")
+    });
+
+
+##//Constructors
+   #To check the constructor: 
+   1.constructor:[].constructor
+   2. totals.attributes.constructor
+
+
+
+##//Functions
+    //Create a variable outside a function
+       var outsideValue = 5;
+
+       //myFunction()
+
+       // myOtherFunction
+       var functionValue = 10;
+       console.log("From inside: outsideValue = " + outsideValue);
+       console.log("From inside: functionValue = " + functionValue;
+       }
+       function myOtherFunction() {
+         //Output Variables
+         console.log("From inside: outsideValue = " + outsideValue);
+         console.log("From inside: functionValue = " + functionValue;
+       };
+       Or repeat
+
+
+
+
+
+##//Functions for Handling Cookies
+1. document.cookie = 'name=value';
+2. localstorage.setItem('key', 'value');
+3. localStorage.getItem('key');
+
+
+
+##//Debugging
+1. console.log('Debug message');
+2. console.error('Error message');
+3. console.table([{name: 'Alice', age: 25}, {name: 'Bob', age: 30}]);
+4. debugger;
+5. fetch('https://api.example.com/data',
+   {
+     method: 'GET',
+     headers: {
+      "Authorization': 'Bearer YOUR_TOKEN'
+   }
+   })
+   .then(response => response.json())
+   .then(data => console.log(data));
+6. localStoreage.setItem('token', 'YOOUR_TOKEN');
+   let token = loca;Storage.getItem('token');
+
+~~~~~~~~Debugging Statements~~~~~~~~~~
+7. function updateLabel() {
+    var addend1 = getNumber1();
+    console.log('addend1:', addend1);
+    var addend2 = getNumber2();
+    console.log('addend2', addend2);
+    var sum = addend1 + addend2);
+    console.log('sum:', sum);
+    label.textContent = addend1 + ' + ' + addend2 ' = ' + sum;
+  }
+
+8. ~~~Prints a Stack Trace to the console~~~~
+const first = () => { second(); };
+const second = () => { third(); };
+const third = () => { fourth(); };
+const fourth = () => { console.trace(); };
+first();
+
+
+
+
+##~~~~~Select all images in the document~~~~~~~~~
+let images = $$('img', document.querySelector('.devsite-header-background'));
+for (let each of images) { 
+  console.log(each.src);
+}
+
+
+
+##//Client-Side
+1. const e = document.createElement("div");
+2. const e = document.createElement("div");
+3. Array.from(document.links).map(link => link.href)
+4. document.querySelectorAll("input[type='hidden']")
+5. document.cookie.split(';').map(cookie => cookie.trim());
+6. function findImgInParent(node) {
+     var tg=node.target;
+     if(tg==undefined||tg.tagName=undefined)
+        tg=node;
+     var tag=tg.tagName
+     if(tag.toLowerCase()=='html')
+       return null;
+     var child=node.childNodes;
+     var fnd=null;
+     if(child==undefined)
+       child=node.target.childNodes;
+     child.forEach(function(key) {
+       if(key.tagName=='img')
+         fnd=key;
+    });
+
+7. $server = "server.example.com";
+8. $username = AskForUserName();
+9. $password = AskForPassword();
+10. $address = AskForAddress();
+11. $sock = OpenSocket($server, 1234);
+12. writeSocket($sock, "AUTH $username $password\n");
+13. $resp = readSocket($sock);
+14. if ($resp eq "success") {
+     username/pass is valid, go ahead and update the info!
+     writeSocket($sock, "CHANGE-ADDRESS $username $address\n";
+    } else {
+    print "ERROR: Invalid Authentication!\n";
+    }
+
+
+
+
+
+
+##//Errors
+new Error()
+new Error(message)
+new Error(message, options)
+new Error(message, fileName)
+new Error(message, fileName, lineNumber)
+Example: 
+//Function call or new construction
+When the Error is used like a function, that is without new, it will return an Error object.
+
+const x = Error("I was created using a function call!");
+
+## Above has the same functionality as following
+const y = new Error('I was constructed via the "new" keyword!');
+
+
+##//Rethrowing Errors
+It is sometimes useful to catch an error and re-throw it with a new message. In this case you should pass the original error into the constructor for the new Error.
+
+try {
+  frameworkThatCanThrow();
+} catch (err) {
+  throw new Error("New error message", { cause: err });
+}
+
+
+
+##//Error.captureStackTrace()
+The Error.captureStackTrace() static method installs stack trace information on a provided object as the stack property.
+
+Using Error.captureStackTrace()
+The getStack() utility function returns the current stack trace at the point it is called, removing itself from the stack. This serves the same debugging purpose as console.trace(), but allows you to output the string elsewhere. Note that it does not construct an Error instance for this purpose, but installs stack on a plain object, which would be more efficient for our purposes. Normally, you would call Error.captureStackTrace on objects intended to be thrown as errors, as shown in the next example.
+Example:
+function getStack() {
+  const obj = {};
+  if ("captureStackTrace" in Error) {
+    // Avoid getStack itself in the stack trace
+    Error.captureStackTrace(obj, getStack);
+  }
+  return obj.stack;
+}
+
+function foo() {
+  console.log(getStack());
+}
+
+foo();
+// Error
+//     at foo (<anonymous>:8:15)
+//     at <anonymous>:11:1
+
+
+
+
+##//Installing stack trace on a custom error object
+The main use case for Error.captureStackTrace() is to install a stack trace on a custom error object. Typically, you define custom errors by extending the Error class, which automatically makes the stack property available via inheritance. However, the problem with the default stack trace is that it includes the constructor call itself, which leaks implementation details. You can avoid this by using Error.captureStackTrace(), which allows the stack trace to be installed even for custom errors that do not inherit from Error.
+Example:
+class MyError extends Error {
+  constructor(message, options) {
+    super(message, options);
+    if ("captureStackTrace" in Error) {
+      // Avoid MyError itself in the stack trace
+      Error.captureStackTrace(this, MyError);
+    }
+  }
+}
+
+const myError = new MyError("Something went wrong");
+console.log(myError.stack);
+
+
+
+//if you don't call Error.captureStackTrace() here, 
+some engines are still smart enough to avoid MyError in the stack trace if the constructor inherits from Error. 
+Calling Error.captureStackTrace() is more important for custom errors that, for some reason, do not inherit from Error.
+Example:
+class MyError {
+  constructor(message) {
+    this.message = message;
+    if ("captureStackTrace" in Error) {
+      // Avoid MyError itself in the stack trace
+      Error.captureStackTrace(this, MyError);
+    }
+  }
+}
+
+const myError = new MyError("Something went wrong");
+console.log(myError.stack);
+
+
+
+
+##//Error.isError(value)
+Error.isError() checks if the passed value is an Error. It does so by performing a branded check for a private property initialized by the Error() constructor. 
+This is the same mechanism used by Array.isArray()
+It is a more robust alternative to instanceof Error because it avoids false positives and false negatives:
+Error.isError() rejects values that aren't actual Error instances, even if they have Error.prototype in their prototype chain — 
+instanceof Error would accept these as it does check the prototype chain.
+Error.isError() accepts Error objects constructed in another realm — instanceof Error returns false for these because the identity of the Error constructor is different across realms.
+Error.isError() returns true for DOMException instances. 
+Example:
+// all following calls return true
+Error.isError(new Error());
+Error.isError(new TypeError());
+Error.isError(new DOMException());
+try {
+  1 + 1n;
+} catch (e) {
+  console.log(Error.isError(e)); // The operation threw a TypeError, so this returns true
+}
+
+// all following calls return false
+Error.isError();
+Error.isError({});
+Error.isError(null);
+Error.isError(undefined);
+Error.isError(17);
+Error.isError("Error");
+Error.isError(true);
+Error.isError(false);
+// This is not an error, because the object does not have the private property
+// initialized by the Error constructor
+Error.isError({ __proto__: Error.prototype });
+
+
+//instanceof vs. Error.isError()
+When checking for Error instance, Error.isError() is preferred over instanceof because it works across realms.
+Example:
+const iframe = document.createElement("iframe");
+document.body.appendChild(iframe);
+const xError = window.frames[window.frames.length - 1].Error;
+const error = new xError();
+
+##// Correctly checking for Error
+Error.isError(error); // true
+// The prototype of error is xError.prototype, which is a
+// different object from Error.prototype
+error instanceof Error; // false
+
+
+##//Normalizing caught errors
+You can use Error.isError() to detect if the caught value is an error and normalize it to an error object.
+Example:
+try {
+  throw "Oops; this is not an Error object";
+} catch (e) {
+  if (!Error.isError(e)) {
+    e = new Error(e);
+  }
+  console.error(e.message);
+}
+
+
+
+
+##// Error.stackTraceLimit static data property indicates the maximum number of stack frames captured by the stack trace of an error. 
+It can be set by user code to change the engine's behavior.
+Setting it to a larger value can be useful for debugging, as it allows you to see more of the call stack. 
+Setting it to a smaller value can improve performance as it reduces the amount of stack captured.
+
+Property attributes of Error.stackTraceLimit
+Writable	yes
+Enumerable	yes
+Configurable	yes
+
+Example:
+Error.stackTraceLimit = 2;
+const a = () => b();
+const b = () => c();
+const c = () => d();
+const d = () => e();
+const e = () => {
+  throw new Error("My error");
+};
+try {
+  a();
+} catch (e) {
+  console.log(e.stack);
+}
+// Only two frames in supporting engines; all frames in others
+
+
+
+##//Error.prototype.toString()
+Syntax: toString()
+The Error object overrides the Object.prototype.toString() method inherited by all objects. 
+Example:
+Error.prototype.toString = function () {
+  if (
+    this === null ||
+    (typeof this !== "object" && typeof this !== "function")
+  ) {
+    throw new TypeError();
+  }
+  let name = this.name;
+  name = name === undefined ? "Error" : `${name}`;
+  let msg = this.message;
+  msg = msg === undefined ? "" : `${msg}`;
+  if (name === "") {
+    return msg;
+  }
+  if (msg === "") {
+    return name;
+  }
+  return `${name}: ${msg}`;
+};
+
+
+
+##//If and Else
+const usedStatus = () => {
+  let age = everydayPack.backpackAge();
+  let description;
+  if (age >= 30) {
+    if (age >= 365) {
+      if (age >= 1095) {
+        description = "old";
+      } else {
+        description = "used";
+      }
+   } else {
+      description = "lightly used";
+  } else {
+     description = "new";
+  }
+  console.log(
+    Age: ${age} days
+    Status: ${description}
+    );
+};
+
+
+
+
+
+##//Omitting Options
+Omitting options argument
+JavaScript only tries to read options.cause if options is an object — this avoids ambiguity with the other non-standard Error(message, fileName, lineNumber) signature, which requires the second parameter to be a string. If you omit options, pass a primitive value as options, or pass an object without the cause property, then the created Error object will have no cause property.
+Example:
+const error1 = new Error("Error message");
+console.log("cause" in error1); // false
+
+##// Passing a primitive value
+const error2 = new Error("Error message", "");
+console.log("cause" in error2); // false
+
+##// Passing an object without a cause property
+const error3 = new Error("Error message", { details: "http error" });
+console.log("cause" in error3); // false
+
+
+
+~~~~~~React FrameWorks~~~~~~~~~
+1. "React API" to describe user interface
+   "ReactDom" to build in browser
+    
+2. "npm install react"
+  1.Importing a specific API
+    import {useState} from 'react';
+  2.Importing all APIs together
+    import * as React from 'react';
+
+3. ~~~~~~Timing and Performance~~~~~~
+  console.time([label])
+  console.timeLog([label, ...data]);
+
+  console.time("My Operation");
+    //Some code to measure
+  for (let i = 0;i < 100000; i++) {
+    // ...
+  }
+  console.timeEnd("My Operation");
+
+4. ~~~~To Log additional Data~~~~~~~
+  console.time("Process");
+  setTimeout(() => console.timelog("Process", "Halfway through"), 500);
+  setTimeout(() => {
+  //...more work...
+    console.timeEnd("Process");
+  }, 1000);
+
+5. ~~~~~Formatting Output~~~~~~
+  1. %s { Formats the argument string}
+  2. %d or %i { Formats the argument integer }
+  3. %f { Formats the argument as a floating-point number
+  4. %o or %O { Formats the argument as a javaScript object.
+  5. %c { Applies CSS Styles to the output }
+     ##Example: console.log("Name: %s, Age: %d, "Daily", 333);
+         console.log("Object: %o", {a:1, b:2});
+         console.loh("%cStyledmessage", "color:red; font-size: 16px;");
+
+
+
+
+~~~~~~~~~~~~Expressions~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~Conditional Expressions~~~~~~
+condition ? valueIfTrue:
+valueIfFalse
+
+~~~~~Watch Expression~~~
+typeof sum
+myVariable
+count
+index
+name
+isValid
+myObject.propertyName { java, python, javaScript}
+myObject->propertyName { C++ }
+object.field
+myArray[0]
+myList[i]
+myCollection.size()
+len(myCollection)
+
+
+~~~~~Boolean Expressions~~~~~
+isLoggedIn
+isAdmin
+value > 10 | isError
+lisEmpty
+
+~~~~Arithmetic Expressions~~~~~~
+a + b
+x*y/z
+(price-discount)*
+quantity
+
+
+~~~~~queryObjects(Constructor)~~~~~~~~~~~
+queryObjects(Promise)
+queryObjects(HTMLElement)
+queryObjects(foo)
+
+
+~~~~~Mapped Events~~~~~~
+mouse { mousedown, mouseup, click, dblclick, mousemove, mouseover, mouseout, mousewheel}
+key { keydown, keyup, keypress, textInput}
+touch { touchstart, touchmove, touchend, touchcancel}
+control { resize, scroll, zoom, focus, blur, select, change, submit, reset}
+
+
+~~~~~~~~Web Application Layers~~~~~~~~~~
+1. Java
+2. CSS
+3. HTML
+
+
+~~~~~~~Constraints of REST~~~~~~~~~~~~
+  1. Client-Server Architecture
+  2. statelessness
+  3. cacheability
+  4. layered system
+  5. Code on demand
+  6. uniform interface
+
+
+
+~~~~~~~~~~~~~~~~~~~~~MonGoDB~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. MongoDB
+   1.mondogdb.com/products/compass
+   2. ReactDom can render off MongoDB
+   3. Uses NPM
+   4. webpack.js.org "To Bundle Scripts"
+   5. With mongo use npm i webpack webpack-cli & npm i ts-loader
+   6. Server Use: Can inject middleware layer into Express
+   7. Key Pair words for Mongo "collection/document"
+
+
+2. import {createRoot} from "react-dom/client"
+   const App = () => {
+     return <div>Hello React</div>;
+   });
+   
+   const container = document.getElementById("app")
+   const root = createRoot(container)
+   root.render(<Sponser Me/>);
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~Vanilla~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*** You can always consume what you match ***
+NOTE: To print to HTML, on the first and final const, place the callback at the end. Next at the bottom place "callback(finalTip); above the };
+    On the next bottom line, enter printHTML in as your variable.
+
+
+
+1. Basic foundation for UI-driven applications
+   { Create, Read, Update, Delete }
+
+2. Application Functionality
+  { Your App, java framework, browser UI, contentManager = { Networking, rendering Engine= javaScript Engine}
+
+3. Recursive descent parser
+   parseContent() { Header, Comment, Element, prettyParse() with lexer}
+
+4. Parsing Elements
+  <img src="/images/chzbrgr.gif"/>
+  <p>This paragraph has <i>nested</i>element content.</p>
+
+5. Void Elements { area, base, br, col, command, embed, hr, img, input, keygen, link, meta, param, source, track, wbt }
+
+6. PreOrder Traversal
+   1. Document Order
+   2. Useful for copying
+   3. Visit order: root, children
+
+8. node.nodeType
+  1. Element_Node 1
+  2. ATTRIBUTE_NODE 2
+  3. TEXT_NODE 3
+  4. COMMENT_NODE 8
+  5. DOCUMENT_NODE 9
+  6. Nodes
+     { node=parentNode, owner document, firstChild, secondChild, nextSibling, previousSiblings }
+
+
+10. HTML_Parsers
+    pp Element= { pp-closetag, (nested content), pp-opentag=pp-tagname, attributes }}
+    1. Script for Browser
+       <a href="https://soloist.ai/dailyinvestors/TR/html50/dom.html"> HTML
+
+11.   Functions
+      1.//Create a variable outside a function
+       var outsideValue = 5;
+
+       //myFunction()
+
+       // myOtherFunction
+       var functionValue = 10;
+       console.log("From inside: outsideValue = " + outsideValue);
+       console.log("From inside: functionValue = " + functionValue;
+       }
+       function myOtherFunction() {
+         //Output Variables
+         console.log("From inside: outsideValue = " + outsideValue);
+         console.log("From inside: functionValue = " + functionValue;
+       };
+       Or repeat
+
+      2.~~~~~~~  Async Functions~~~~~~~~~~~
+async function FetchData(url) {
+  let response =  awaot fetch(url);
+  let data = await response.json();
+  return data;
+}
+
+
+
+12. Documents
+  //Create a score
+  var myScore;
+
+  //Setup + Change the game Store
+  init(_;
+  changeScore()
+
+  //Function to initiliaze the game score
+  function init() {
+  myScore = 1000;
+  }
+
+  //Function to change the score of this Game
+  function changeScore() {
+    myScore = myScore + 333;
+    console.log("Player score: " + myScore
+  }
+
+
+
+
+13. JSX Extension
+const handleClick = (event) =>
+  onClick(event, {photo, index});
+};
+
+return (
+  <img
+     key={key}
+     style={onClick ? {...imgStyle,...imgWithClick"}: imgStyle}
+     {...photo}
+     onClick={onClick ? handleClick: null}
+  !>
+ };
+};
+
+
+14. Example Document
+ //Create a variable
+var myScore = 333;
+myScore = myScore + 333;
+console.log("Player Score; " + myScore);
+function changeScore() {
+ var myScore = 1000;
+ function changeScore() }
+   myScore = myScpre = 333;
+   console.log("Player score: " + myScore);
+ }
+};
+
+
+15. Simulation
+//Simulate human input
+const input= document.querySelector("inputField");
+const text "Hello!";
+let index = 0;
+
+function typeCharacter() {
+  if (index < text.length) {
+    key: text[index],
+    code: key${text[index].toUpperCase()};
+    charCode: text[index];
+    indext++;
+    SetTimeout(typeCharacter, 333);
+  }
+}
+typeCharacter();
+
+
+16. ~~~~~~~~ Check for Detailed Property~~~~~~~~~~~
+button.addeventListner("click", (event) => {
+  if (event.detail) {
+} else {
+  console.log("Button clicked!");
+  }
+});
+
+
+17. ~~~~~~Triggering Event Listeners~~~~~~~~
+// For testing + human simulation
+const customClickEvent = new customEvent("click", {
+  detail: {message: "This is a custom click!"},
+});
+
+//Dispatch the custom event
+button.dispatchEvent(customClickEvent);
+
+
+~~~~~~~Adding Event Listners~~~~~~~~~
+const button = document.querySelector("button")
+button.addEventLstner(
+  "click"
+  (e) => {
+    console.log('Event fired: ${e}')
+  }
+};
+
+
+~~~~~Targetting Event Listners~~~~~~
+  target.addEventListner9target, callback [,options]);
+    console.log(double(5));
+    console.log(quintuple(5)); 
+
+
+
+18.  ~~~~~~~If Else~~~~~~~~~
+Const usedStatus = () => {
+  let age = everydayPack.backpackAge();
+  let description;
+  if (age >= 30) {
+    if (age >= 365) {
+      description = "old";
+    } else {
+      description = "lightly used";
+    }
+  } else {
+      description = "new";
+  }
+  console.log(
+    Age: ${age} days,
+    Status: ${description}
+  );
+};
+
+
+19. ~~~~~~~TypeArray.prototype.map()~~~~~~~~~~
+const usedStaus = new Uint8Array([25, 36, 49]);
+const roots = uint8.map(Math.sqrt);
+
+console.log(roots);
+  //expected output:Uint9Array[5,6,7]
+
+
+
+20.  ~~~~~~~~Event Objects~~~~~~~~~~~
+//update mouses
+const mousePosition = (event) => {
+  posX.innerText = event.pageX;
+  posY.innertext = event.pageY;
+  console.log(event)
+};
+
+
+21. Implicit Return
+ const add =  (a, b) => a + b; #Implicit return
+
+22. Create a New Article
+
+const main = document.querySelector(".maincontent");
+
+const newArticle = document.createElement("article");
+newArticle.classList.add("backpack");
+newArticle.innerHTML = content;
+
+main.append(newArticle);
+
+if (everydayPack.backpackAge() >=30) {
+  console.log("Backpack is used")
+} else {
+  console.log("backpack is new")
+}
+
+23. If Else
+const usedStatus = () => {
+  let age = everydayPack.backpackAge();
+  let description;
+  if (age >= 30) {
+    if (age >= 365) {
+      if (age >= 1095) {
+        description = "old";
+      } else {
+        description = "used";
+      }
+   } else {
+      description = "lightly used";
+  } else {
+     description = "new";
+  }
+  console.log(
+    Age: ${age} days
+    Status: ${description}
+    );
+};
+
+
+24. ~~~~~~Arrow Function Breakdown~~~~~~~~~~~~~~~~
+//Remove the word "function" + place arrow between the argument & opening the body bracket.
+(a) => {
+  return a + 100,
+//Remove the body brackets, and word "return"--this return is implied
+(a) => a + 100;
+//Remove the arg ()
+a => a + 100
+
+25. ~~~~~~~~~~~Standard Use of a return function~~~~~~~~~~~~~
+function sum(a, b) {
+  let result = a + b;
+  return result;
+}
+console.log(sum(5, 3)); //Output: 8
+
+26.~~~~~ Returning a function~~~~~~~
+function createMultiplier(multiplier) {
+  return function(value) {
+    return value * multiplier;
+  }
+}
+const double = createMultiplier(2);
+const quintuple = createMultiplier(5);
+
+27. ~~~~~~~~~~~Const~~~~~~~~~~~~~~~
+const number = 42;
+try {
+  number = 99;
+} catch (err) {
+  console.log(err);
+  //expected output: TypeError: invalid assignment to const 'number'
+  //Note: error messages depend on browser.
+}
+console.log(number);
+
+
+28. ~~~~~~~~~~~~~~~~Classic Function~~~~~~~~~~~~~~~~~~~
+function doSomeMath(a, b) {
+  let c = a + b;
+  return c;
+}
+
+//immediately invoke function
+cFunction () {
+  let a = 5;
+  let b = b;
+  let c = doSomeMath(a, b);
+  console.log('The sum of a and b is: ${c}');
+}
+
+
+29. ~~~~~~~~~~~~~~~Function Expression~~~~~~~~~~~~~~~~~~
+const doMoreMath = function (a, b) {
+  let c = a * b;
+  return c;
+};
+
+console.log("Do some math:", doSomeMath(5, 6));
+console.log("Do more math:", doMoreMath(5, 6)); 
+
+
+30. ~~~~~~~~~~~~~~~Navigation Menu~~~~~~~~~~~~~~~~~~~~~~
+function createNavMenu(document) {
+  const mainNav = document.createElement("nav")
+  mainNav.classList.add("main-navigator")
+  const navList = documenr.createElement("ui")
+  navList.innerHTML = navContent
+  mainNav.append(navList)
+  }
+  document.querySelector
+}
+
+
+
+31. ~~~~~~~~~~~~~Variables~~~~~~~~~~~~~~~~~~~~~
+Variable =  A container with some piece of data
+var x = 1;
+if x === 1) {
+  var x = 2
+  console.log(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
